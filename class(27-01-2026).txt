@@ -1,0 +1,103 @@
+Process of Hypothesis:
+step1:Define a Test statitics
+     meu1-->avearge height of a student in class1
+	 meu2-->avearge height of a student in class2
+	 test statitics=meu1-meu2 
+step2:define the H0 and H1
+H0-->Null hypothesis--->there is no diff in the heights of and
+    student of class1 and class2 
+H1-->alternate hypothesis->there is diff in the heights of and
+    student of class1 and class2 
+step3:find the p_value
+P_value=probability of obseving the test statitics given that
+       Null hypothesis is True.
+	   
+p_value=0.9---->
+
+step:significance level--->5%
+    p_value>0.05---->H0 is accepted
+	                 H1 is rejected
+	p_value<=0.05--->H0 is rejected
+	                 H1 is accepted.
+					 
+example:
+ tossing a coin check it is bised twoards head.
+ step1:define a Test statistics
+ if the coin is biased--->P(H)>0.5
+ if the coin is unbiased--->P(H)=0.5 
+ Test statistics=no of heads=x
+ step2:define hypothesis.
+ H0---->coin is not biased towards head 
+ H1---->coin is baised towards head.
+ 
+ step:3 find a p_value-->pure probabilistic approach
+ Design the experiment--->
+ P_value(probability of observing|coin is not biased towards head )
+ Tossing a coin 5 times---->
+ X=5
+ P_value=P(X=5|coin is not biased towards head)
+  T1  T2  T3  T4  T5 
+  H   H   H   H   H --->x=5
+  
+  1/2 1/2 1/2 1/2 1/2
+  
+  1/2*1/2*1/2*1/2*1/2=(1/2)5=1/32=0.03(approximately)
+                                 =3% 
+  if p_value<=0.05-->
+      H0 is rejected 
+	  H1 ia accepted 
+	  0.03<0.05----->H0 is rejected -->
+	  coin is baised towards head...
+	  
+	  
+1.permutation test 
+2.ks test 
+3.AD test 
+4.Z-test 
+5.T-test 
+6.chi-square test 
+7.ANNOVA test.
+
+1.permutation test:
+-best technique to find the p_value 
+-it non parametric test 
+       X                Y
+    class1(50)       class2(50)
+	 Sample1          sample2---->D=original_test_statistics
+	  mue1             meu2       D=meu1-meu2
+	
+	jumbled this two samples(sample1,sample2)-->100
+	    container=[]
+		shuffle it
+	we need to the simple random sampling 
+	
+	  x1         x2
+	  50         50---->s1=meu1-meu2
+	  
+	  x1         x2
+	  50         50----->s2=meu1-meu2 
+	  
+	  
+	  
+	  
+	  
+	  x1        x2------->s1000=meu1-meu2 
+	  
+	  no_of_sample=1000
+	  
+	  s1,s2,s3--------s1000 
+	  sort it in ascending order 
+	  s1,s2,s3------------------------s1000
+	  
+	  In this check where the D will lie
+	  
+	  s1,s2,s3-----------------D-------s1000
+	  what percent of points are greater than D 
+	  10% points are greater than D 
+	  P_value=10%
+	  
+	  
+  
+  
+  
+ 
