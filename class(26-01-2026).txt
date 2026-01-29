@@ -1,0 +1,91 @@
+Bootstrapping:
+we want to estimate the median of the population
+based on the sample.
+X-->x1,x2,x3------------------xn
+sample_sime=m 
+no_samples=1000
+we doing the random sampling...
+s1------>x1,x2------xm---->m1
+s2------>x2,x4,x5---xm---->m2
+
+
+
+s1000--->x1,x2,----xm------>m1000
+
+m1,m2,m3--------m1000
+sort all theses medians in ascending order .
+m1,m2,m3--------m1000
+CI=95%
+[m1,m950] with CI 95%.
+
+Hypothesis Testing:
+-important concept in statistics.
+ex:
+you have a headache--->Glucose tablet.
+headache--->recover.-->placebo effect.
+ 50         50
+  x         y 
+class1    class2 
+x-->heights of a student in class1 
+y-->heights of a student in class2 
+is there any diff in the height of a student in class1
+and class2?
+soution:
+meu1--->avg height of student in class1 
+meu2--->avg height of student in class2
+
+suppose meu1-meu2=0
+
+to quantify this we required a Hypothesis testing.
+
+Hypothesis Testing is a proof by contradiction.
+
+process of Hypothesis:
+step1:define a Test statistics 
+     meu1--->heights of student in class1
+	 meu2--->heights of student in class2 
+	 test statistics=meu1-meu2
+step2:defined the hypothesis:
+-we have a two types of hypothesis:
+ H0--->Null hypothesis 
+ H1--->Alternate Hypothesis(inverse of H0)
+ H0:There is no difference in the heights of a 
+    students in class1 and class2
+ H1:There is difference in the heights of a 
+    students in class1 and class2
+	
+step3:find the p_value
+to find the p_value we need to design the experiment
+p_value=probability observing test statistics given
+that the Null hypothesis is True.
+P_value=P(observing TS|H0 is True) 
+test statistics=meu1-meu2 
+meu1-meu2=5cm
+H0 is True
+P=(meu1-meu2=5cm|there is no diff)=0.9=90%
+
+Step4:specify the significance level
+generally we are considering 5% sig level.
+if p_value>5%--->H0 is accepted
+             --->H1 is rejected
+if p_value<=5%--->H0 is rejected
+              --->H1 ia accepted.
+			  
+			  5%--->
+			  1%
+			  10%
+			  15%
+			  20%
+
+ 
+
+
+
+
+
+
+
+
+
+
+
