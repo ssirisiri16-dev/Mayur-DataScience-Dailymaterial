@@ -1,0 +1,132 @@
+Central limit therom:
+mean and SD should be finite--->
+estimating the mean--->
+
+confidence Interval:
+X-->continuous random variable...
+X~any distribution (mean,sd)
+sample---->X--->heights of a people in country.
+[152,154,156,158,160,164,166,168,170,172,174,176,178,180] 
+we want to estimate a mean of the population from the sample----
+
+sample size=m 
+
+population=meu
+sample mean=x-barrds 
+
+as the sample size increases we going closer and closer towards
+population mean---
+at some point of a time definately
+ x-bar=meu(approximately)--->point estimation...
+ 
+ the population mean is lies in between[168,180] with
+ 95% probability.
+ 
+ [168,180]--->Interval
+ 95% probability--->confidence 
+ 
+ I am 95% confident that the population mean is lies in
+ between [168,180]--->confidence Interval...
+ 
+ CI for underlying distribution.
+ we kno th edistribution.
+ X~GD(mean,sd) 
+ then we have empirical properties of Gaussian distribution.
+ mean=168cm
+ sd=5cm
+ (meu-sig) to (meu+sig)---->68.2%
+ (meu-2*sig) to (meu+2*sig)--->95%
+ (meu-3*sig)  to (meu+3*sig)--->99.7%
+ 
+ (168-2*5) to (168+2*5)
+ 
+ 
+ I am 95% confident that the data is lies in the range
+ [158,178]
+ CI  90%
+ CI  80%
+ CI  75%
+ by using the Gaussian distribution table.
+ 
+ CI for non knowing distribution:
+ X~continuous RV
+ X~any distribution(mean,sd)
+ we dont know the distribution...
+ we want to estimate the population mean...
+ 
+ sample=[152,154,156,158,160,164,166,168,170,172,174,176,178,180]
+ some how i got to know that sd=5cm-->known
+ mean(sample)=177.85cm
+ sd=5cm
+ apply a CLT
+ X-bar~GD(mean(sample),sd/sqrt(14)
+ 
+ x-bar~GD(177.85,1.34)
+ we can use the empirical properties of GD 
+ 
+ (meu-2*sig) to (meu+2*sig)--->95%
+ 
+ I am 95% confident that the population mean is lies in
+ between [175.17,180.53].
+ 
+ 
+ X~any distribution(mean,sd) 
+ we dont know the distribution .
+ we dont know the population SD
+ In this case---->student T distribution .
+ we will use the theorotical approach of student T distribution table.
+ 
+ 
+ to estimate the CI mean,variance,SD,95th percentile
+ 
+ we have a modern computation technique
+ programmers approach
+ empirical bootstrapping.
+ 
+ ex:
+ X=wieghts of people in country .
+ X=[56,48,67,68,90,44,78,79,80,82,88,100,110]
+ sd=10kg.
+ estimat the mean of population...
+ give the interval of 95% CI
+ 
+ [70.6,81.69] with 95% CI...
+ 
+ 
+ Bootstrapping:
+ we wanted to estimate the median with 95% CI
+ data=x1,x2,x3,x4---------xn
+ taking a sample -->sample size=m 
+ we are doing random sampling
+ k sample--->1000
+ 
+ s1--->x1,x2,x,3-----xm----->m1
+ 
+ s2---->x3,x4,x5----xm ----->m2
+ 
+ s3---->x1,x10-----xm------->m3
+ 
+ 
+ s1000------------->xm------>m1000
+ 
+ 
+ m1,m2,m3----------------m1000-->medians of sample 
+ 
+ sort all these values in ascending order 
+ 
+ m1<=m2<=m3----------<=m1000
+ 
+ m1,m2,m3,4--------------------m1000
+ 
+ LL=m1 
+ UL=m950
+ 
+ CI=[m1,m950]--->95%
+ 
+ CI=[m1,m900]--->90%
+ 
+ 
+ 
+
+
+
