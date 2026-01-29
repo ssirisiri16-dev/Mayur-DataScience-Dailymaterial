@@ -1,0 +1,206 @@
+Why Python?
+-current market scenario-->no alternate language for python
+-python-->rich set of DS and AI libraries
+-programming-->
+
+programming language:
+
+
+language----->english-->mode of communication
+
+p1----------------------->p2-->language
+why you want to communicate?
+express the thoughts
+why?--->to solve a particular problem
+
+
+what is programming language?
+p1----------------------->p2-->natural language
+
+
+p1------------>computer--->PL
+PL is a special kind of instructions which is used to communicate with computer.
+
+why:
+hindi
+english--
+marathi?
+telagu?--->becoz it is --->grammer-->set of rules
+
+PL-->grammer-->langauge
+
+python--->programming language
+
+english---->
+steps:
+
+alphabets---->words----->sentences--->paragraph
+(A-Z,a-z)
+
+
+pyhton:
+
+alphabets/--------->tokens--->instruction--->program
+characeter set
+
+
+character set:
+english--->26 characters--->gr8
+
+python--->128 characters--->
+a-z,A-Z,0-9,,.:'"-----128 chracters
+
+
+Tokens:
+-Tokens are the smallest indvidual unit within the program.
+-without token we will not able to write any python code.
+1.Keywords
+2.Identifiers
+3.operators
+4.seperators
+5.data types
+6.constants
+
+
+1.Keywords:
+-predefined words/reserved words-----
+english--->which
+-we can directly used this predefined words we dont need to tell the 
+meaning
+-there are 35 keywords present 
+
+2.Identifier:
+-names used in the program
+-it is use to identify the data
+-variable name,class name,function etc
+-algerian-->rules for writing the identifier--->
+1.Identifier should contains ---->
+   A-Z
+   a-z
+   0-9
+   special symbol  only one (_)underscore
+2.identifier should starts with alphabets or special symbol
+it should no starts with number
+
+3.identifier should not be a keywords
+4.Python is a case sensitive language
+   a=2
+   A=2-->both meaning is different
+5.length of the identifier is upto any characters but compiler
+will assume upto a specific length
+3.operators:
+-it is a special symbol which is used to perform the operations.
+-on which we are performing the operations we called it as 
+operands
+ex:a+b 
++--->operators
+a,b--->operands
+-In a python we have different types of opeartors:
+1.Arithmatic opeartors
+2.Relational/comparison operators
+3.logical operators
+4.Bitwise operators
+5.assignment operators
+6.membership operators
+7.Identity operators
+
+
+1.Arthmatic operators:
+-it is used to perform arithmatic operations
+operators              maening
+ +                     addition
+ -                     sub
+ *                     mul
+ /                     div
+ //                    floor divison
+ %                     modulus
+ **                    power
+ 
+ 
+ a//b---->least integer value
+ 
+ 3.4-->3
+ 7.5-->7
+ 17.5-->
+ 
+ 
+ 5/2
+ /--->quotient
+ //--->least integer value of quotient
+ %---->remainder
+ 
+ everey operators has two things:
+ -when we are solving the expression
+ 1.priority or precedence:
+ -when we have a multiple operators present in the expression
+ which operator is getting evaluated first it depends on 
+ priority.
+ 2.associativity
+ -when the operators are having the same priority then the operators
+ are getting evaluated based on the associativity
+ 
+ a=3+7*2
+ a=3+7*2/2
+ 
+   operators         priority     associativity
+      **               1           Right to left
+	  *,/,//,%         2           left to right
+	  +,-              3           left to right
+	  
+	  
+	  a=2+3-1
+	  a=5-1
+	  a=4
+	  
+	  a=2**3**1
+	  a=2**3
+	  a=8
+	  
+	  
+	b=3+5*6/3-4//2**3
+	b=3+5*6/3-4//8
+	b=3+30/3-4//8
+	b=3+10-4//8
+	b=3+10-0
+	b=13+0
+	b=13
+	
+	
+	c=12*3-6+8//2**3
+	
+	  
+	  
+	  
+	  
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

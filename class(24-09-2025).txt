@@ -1,0 +1,280 @@
+python:
+
+1.chracter set
+2.tokens
+3.instructions
+4.program
+character set:128 characters
+
+Tokens:
+1.keywords
+2.Identifier
+3.operators
+4.seperators
+5.data types
+6.constant
+
+1.keywords:
+  35
+2.Identifier:
+-name
+variable name,function name,class name
+rules:
+1.A-Z,a-z,0-9,_
+2.
+3.
+
+operators:a+b
+
+1.arithmatic operators
+2.relational or comparison operators
+3.logical operators
+4.Bitwise operators
+5.assignment operators
+6.membership operators
+7.Identity operators
+
+
+1.arithmatic operators:
+  +,-,*,/,//,%,**
+  
+  priority or precedenec
+  associativity
+  
+2.Relational or comparison operators:
+ a,b---->three type of relationship is possible
+        a>b----
+		a<b----
+		a==b--->chromaticity property
+-it is used to find out the relatiship between the values
+operators                  meaning
+  >                       greater than
+  <                       less than
+  >=                     greater than equal to
+  <=                     less than equal to
+  ==                     equal to
+  !=                     not equal to
+
+-this operators will return True or False result
+
+23>12<67--->(23>12) and (12<67)
+             True  and  True-->True
+			 
+			 
+			 True and TRue-->True
+			 True and False--->False
+			 False and True--->false
+			 false and false-->false
+
+-all the relational operators are having the same priority
+and associativity is L to Relational
+operators            priority         associativity
+  **                   1               R to L
+  *,/,//,%             2               L to Relational
+  +,-                  3               L to R 
+  >,<,>=,<=,==,!=      4               L to R 
+  
+  2*4-6//5+45/23>34<2
+  8-6//5+45/23>34<2
+  8-1+45/23>34<2
+  8-1+1.95>34<2
+  7+1.95>34<2
+  8.95>34<2
+  (8.95>34) and (34<2)
+     False  and False===False
+	 
+3.Logical operators:
+-it is used to combine two or more expression or condition
+ operators               meaning
+  and                    logical and
+  or                     logical or
+  not                    logical not
+
+
+Logical AND:(and):
+-logical and is True only when all the conditions are true
+otherwise False
+  condition1      condition2       condition1 and condition2
+      True          True                  True
+      False         TRue                  False
+      TRue          False                 False
+      False         False                 False
+if we use and opeartors with a number it will always give
+the rightmost number as a result
+Logical OR:
+-Logical OR is False only when all the conditions are False
+otherwise True
+condition1    condition2    condition1 or condition 2
+ TRue           TRue              True
+ True           False             True
+ False          TRue              True
+ False          False             False
+when we use or operation wit number it will give give the result 
+as leftmost number.
+
+
+3. logical not:
+-not will simply inverting the values 
+  True------>False
+  False---->True
+  every non zero will be considered as TRue only zero will
+  be considered as False
+  
+  
+  operators            priority         associativity
+  **                   1               R to L
+  *,/,//,%             2               L to Relational
+  +,-                  3               L to R 
+  >,<,>=,<=,==,!=      4               L to R 
+  and or               5               L to R 
+Bitwise Operators:
+Number system:
+-every number has a radix or base
+-base will represent the how many numbers are present in that number system
+
+1.unary NS--->base=1-->(0)
+  1--->0
+  2--->00
+  5---->00000
+Binary NS
+octal NS:base=8--->0,1,2,3,4,5,6,7
+decimal NS-------->base=10-->0,1,2,3,4,5,6,7,8,9
+Hexadecimal NS--->base=16--->0,1,2,3,4,5,6,7,8,9,A-F
+10--->A 
+11--->B 
+12--->C
+13---->D
+14---->E
+15---->F
+
+Binary NS--->base 2--->0,1
+
+conversion from decimal to Binary:
+binary-->2
+
+2^0=1
+2^1=2
+2^2=4
+2^3=8
+2^4=16
+2^5=32
+2^6=64
+2^7=128
+2^8=256
+2^9=512
+2^10=1024
+
+ecah number in bianry we called it as bit
+0101
+  
+7--->4bit binary--
+                8 4 2 1
+                0 1 1 1
+				
+8--->4bit--->8 4 2 1
+             1 0 0 0
+			 
+12--->4bit--->8 4 2 1
+              1 1 0 0
+15---->4bit--->8 4 2 1
+               1 1 1 1
+27------------>16  8  4  2  1
+                1  1  0  1  1
+				
+67------------>64  32  16  8  4  2  1
+                1  0    0  0  0  1  1
+132----------->128  64  32  16  8  4  2 1
+                1   0   0   0   0  1  0 0
+259----------->256  128  64  32  16  8  4  2  1
+                1    0   0   0   0   0  0  1  1
+				
+Binary to decimal:
+
+1010101---->64  32  16  8  4  2  1
+             1  0   1   0  1  0  1
+			 64+16+4+1=85
+
+101110----->32  16  8  4  2  1
+            1   0   1  1  1  0
+			32+8+4+2+1=46
+
+111101010---->256  128  64  32  16  8  4  2  1
+               1    1    1   1   0  1  0  1  0
+			   490
+Bitwise Operators:
+-it is fastest operators among all the operators
+-it is also called low level operators becoz it works on 
+bits
+
+operators            meaning
+ &                   bitwise AND
+ |                   bitwise OR
+ ^                   bitwise XOR
+ >>                  right shift
+ <<                  Left shift
+ ~                   complement
+				
+computer understand only binary.
+
+
+a=5------------->memory---->0101		
+
+a=-5----------->memory--->-0101--->wrong
+
+negative number will be stored in a 2s complement form		
+  
+binary addition rules:
+
+0+0=0
+0+1=1
+1+0=1
+1+1=0 with carry 1
+1+1+1=1 with carry 1
+complements
+1s complement
+2s complement
+
+
+display my number +91 9154861173 areef admin only WhatsApp message
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+	  
+  
+
+
+
+
+

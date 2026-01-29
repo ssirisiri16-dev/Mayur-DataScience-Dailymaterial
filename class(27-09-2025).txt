@@ -1,0 +1,188 @@
+operators:
+1.arithmatic operators:
+  +,-*,/,//,%,**
+2.realtional operators:
+ >,<,>=,<=,==,!=
+ 
+3.logical operators:
+ and,or,not
+
+4.Bitwise operators:
+&,|,^,>>,<<,~
+5.Assignmet opeartors:
+-it is used to asiign the value to the variable.
+a=5
+-we can use assignment opearators with any other opeartors
+-so we called it as compund assignment
+operators            meaning
+  =                  simple assignment
+  +=                 compound addition
+  -=                 compound sub
+  *=                 compound mul
+  /=                 compund div
+  -----
+  &=                 compund bitwise and
+
+
+a=5
+b+=5---->b=b+5
+
+
+a=5
+a*=2---->a=a*2--->a=5*2-->10
+
+a+=34/2*6-7&1
+
+a=a+34/2*6-7&1
+
+
+==-->equal
+=--->assignment
+
+a**=2*3|2
+
+a=a**2*3|2
+a=2**(2*3|2)
+a=2**6=64
+
+0110
+0010
+0110--?6
+a=5
+b=6
+a*=b*3//4&1|12^1
+a=a*b*3//4&1|12^1
+a=5*6*3//4&1|12^1
+a=30*3//4&1|12^1
+a=90//4&1|12^1
+a=22&1|12^1
+&--->1
+^--->2
+|--->3
+Identity operators:
+is,is not
+
+is--->it will return True when both variable are pointing to the same memory location
+otherwise it will return False
+is not-->it will return True when both variable are not pointing to same location
+otherwise False
+
+range-->-5 to +256--->
+
+
+membership operators:
+in
+not in
+-memebership opeartors will work on iterable
+list,set,tuple,dictionary
+lst=[1,2,3,4,5]
+in-->it will return TRue if the element is a member of iterable otherwise
+it will return False
+not in--->it will True if element is not a memeber of iterable othwerwise
+it will return False.
+
+1.a=4**2//3*45&12^1
+2.b=12//3&1|-4
+Data Types:
+-data type will specify two things
+ 1.what type of data it is
+ 2.how much space that data is taking insie the memory
+we dont need to tell compiler explicity data type based on the data
+the compiler will identity--->dynamically typed langauage
+1.Numerical data type
+2.string data type
+3.sequence data type
+4.binary data type
+
+
+1.Numerical Data TYpe:
+-it will take a number
+1.Integer
+2.float
+3.complex
+
+
+1.Integer:
+-it is a numerical data type without fractional point
+a=56--->int
+a=56.8-->not a integer
+
+How integer will stored insie the memory?
+a=5------>+ve---->0101--->binary
+a=-10---->-ve---->2s complement form
+How we will Identify a number is positive or negative?
+sign bit---->LSB---->0--->+ve----  
+                ---->1--->-ve
+8bit=1byte
+
+28 byte--->
+
+10.75-->binary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

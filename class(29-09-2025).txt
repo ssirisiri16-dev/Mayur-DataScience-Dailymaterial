@@ -1,0 +1,224 @@
+programming in python:
+
+character set
+tokens:
+1.Keywords
+2.Identifier:
+3.operators:
+  1.arithmatic operators:+,-,*,/,//,%,**
+  2.relational or comparison operators:>,<,>=,<=,==,!=
+  3.logical operators:and,or, not
+  4.Bitwise operators:&,|,^,>>,<<,~
+  5.assignment operators:=,+=,-=,*=----
+  6.membership operators:in ,not in
+  7.Identity opeartors:is,is not
+4.Data Type:
+-data type will specify two things:
+1.what type of data it is
+2.how much space that data is taking inside the memory
+
+1.Numerical Data type
+2.String Data type
+3.Boolean Data Type
+4.Sequenec data type
+5.binary data type
+1.Numerical Data type:
+-the data type which holds the numbers
+a.integer:there is no fractional point
+ex:a=7------>integer
+   a=7.8---->not a integer
+   a=-6----->integer
+integer data type can be positive as well negative
+how Integer will be stored in Memory?
+a=15------------>binary
+a=-15------------>2s complement from
+2.float:
+conversion of fractional number into Binary:
+a=12.5---------->binary
+integer part----->12---->1100
+fractional part--->0.5
+
+0.5*2--------->1.0--->1
+0.0*2--------->0.0--->0
+0.0*2--------->0.0---->0
+0.0*2--------->0.0---->0
+
+12.5----->1100.1000
+
+
+b=10.75----->binary:
+
+10-------->1010
+0.75-------------->0.75*2---->1.50--->1
+                   0.50*2---->1.00--->1
+				   0.00*2---->0.00--->0
+				   0.00*2---->0.00--->0
+10.75--->1010.1100
+
+
+c=34.11------>binary
+100010.0001
+
+100010.00011
+
+c=47.77--------->binary
+101111.1100
+float:
+-it is holding the fractional value
+
+how the float number will be represented in the memory?
+10.75--->1010.1100--->no
+it use th IEEE754 representation.
+
+4byte---->32bit--->
+1bit--->sign bit 
+8bit--->exponenet bit 
+23bit--->significant bit
+
+1.convert the number into binary
+ 10.75----->1010.1100
+2.Normalized this number
+  1.significant bit*2^exponent
+  1.0101100*2^3
+3.find bias-->n--->no of exponent bit
+  (2^(n-1))-1--->n=8
+  (2^7)-1=128-1=127
+  actual exponent=bias+normalized exponenet
+                 127+3=130
+ 130--------->10000010
+ 
+ 0 10000010 00000000000000000101100
+ 
+ 
+b=20.75---->
+1.convert to binary:
+  10100.1100
+  
+2.normalized:
+  1.significant bit*2^exponent
+  1.01001100*2^4
+  
+3.find bias:
+  (2^(n-1))-1--->n=8
+  bias=127
+  actual bias=127+4--->131--->
+  10000011
+  
+ 0 10000011 00000000000000001001100
+  
+
+  32bit:
+  1bit--sign bit
+  8bit-->exponent
+  23-->significant bit
+
+
+3.complex:
+complex number is always in the form of a+bj or a+jb
+
+2+3j--->complex number
+
+compex number has two parts-->
+1.real part----->2
+2.immaginary part--->3j
+
+j=sqrt(-1)
+j^2=-1
+
+it will hold the value of a complex number
+how complex number will be stored in memory
+real---->float------->IEEE752
+immaginary--->float-->IEEE754
+complex---->vector
+
+vector--->magnetude as well direction
+ex:
+r1:pasta is very good
+r2:pasta is delecious
+
+
+text------->vector
+
+vocabulary--->pasta is very good delecious
+      v1-----[1,1,1,1,0]
+	  v2-----[1,1,0,0,1]
+	  
+conjugate--->4+6j--->4-6j
+	  
+Boolean data type:
+-it hold only two values True and False
+True--->1
+False--->0
+
+string data type:
+-sequence of chracters
+s="mayur"
+
+"",'',''''''
+
+-we can access a particular character in a string with the
+help of index
+-string index will start from 0
+
+-we can access a multiple characters of a string through
+slicing
+[start:end:step_size]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
