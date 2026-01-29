@@ -1,0 +1,44 @@
+Pandas:
+-Data Manipulation
+-Data cleaning
+-Data preprocessing
+-pandas uses two types of data structures--->
+1.data series or series data:
+-when  we have only one row or one column
+2.Data frame:
+-more than one row or column
+
+syntax:
+     import pandas as pd
+	 import--->keyword
+	 pandas---->library name
+	 pd-------->alias
+	 
+Creating a data frames:
+1.dictionary of  list
+
+2.list of dictionary:
+
+
+3.list of lists
+
+
+
+df=pd.read_csv("file_name.csv")--->it will read the csv file_name
+
+df.ndim-->dimensions
+df.shape--->no of rows and columns
+df.shape[0]-->no of rows
+df.shape[1]--->no of columns
+df.head()-->top 5
+df.tail()--->last 5
+df.smaple-->any random rows.
+df.columns-->giving all column names
+df.values--->gives all the values in the datset in the form
+of numpy array
+df.dsecribe()-->it will only works on numercal columns 
+it will returns descriptive stats measures.
+df.info()---->it is giving the entire information about the
+each columns present in dataset.
+df.dtypes--->data type of each column
+df.T---->transpose

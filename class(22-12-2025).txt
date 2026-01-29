@@ -1,0 +1,166 @@
+Probability:
+-chances of occurrence of the event
+sure event
+impossible event
+mutually exclusive events.
+0<=P<=1
+
+Random variable:
+-Random variable is a function which maps the SS into the real value.
+-Random variable are classified into two types--
+1.Discrete Random variable :
+  DRV-->will take a discrete data
+  -for a discrete random variable we have a discrete probability
+  distribution.
+
+2.Continuous random variable:
+  CRV--->will take a continuos data.
+  -for a continuous random variable we have a continuous probability
+  distribution.
+  
+  ex:toss a coin 2 times probality of getting x head..
+  
+  SS-->{HH,HT,TH,TT}
+  X-->represents th eno of heads-->discrete value 
+  X=0--->0 heads 
+  X=1--->1 heads 
+  X=2--->2 heads---
+  X is dicrete random variable
+  
+  data of 5 days of sales of iphone
+     days           no of iphone sold
+	 1                   0
+	 2                   2
+	 3                   1
+	 4                   4
+	 5                   6
+	 
+	 
+	 X-->no of iphone sold  
+	 
+	 X=0--->0 iphone sold
+	 
+	 
+	 P(X=1)=what is the probability that the one iphone is getting
+	        sold
+			=1/5
+			
+			
+			
+			
+			
+	dataset:5 days data of sales of iphone
+	        days              sales_amount
+			1                  50667
+			2                  50789.99
+			3                  2.4lakhs
+			4                  1lakh
+			5                  10.5 lkahs
+			
+			X-->RV-->denotes sales amount
+			
+			P(X>50000)
+			P(X=5050.66)-->X-->continuous random variable
+			
+			
+Discrete Probability Distribution:
+-Discrete Random variable.
+-probability is getting represented with the help of PMF
+-PMF--->probability mass funtion.
+
+Tossing a coin 2 times proabbility of getting x-heads..
+X--->discrete Random variable.
+X--->no of heads 
+SS={HH,HT,TH,TT}
+
+x=0,1,2--->possible values of X 
+
+P(X=0)=1/4
+P(X=1)=1/2
+P(x=2)=1/4
+
+probability mass function it maps sample sapce to real value and
+real value to the probability.
+
+-we have a various kinds of discrete probability distribution:
+1.Bernaullis*
+2.Binomial*
+3.Poissons
+4.Uniform distribution*
+
+1.Benaullis distribution:
+-discrete probability distribution 
+-it is haing only two possible outcomes-->success or Failure.
+ex:Tossing a coin and getting a head..
+   X=getting a head 
+   P(X=getting head)--->probability of success 
+   P(x=getting tail)--->Probabbility of Failue
+   
+   let probability of success =p 
+       probability of failure=1-p 
+	   
+	   X~Bernaullis(P)--->
+	   tossing a  coin getting head-->X~Bernaulis(0.5) 
+	   
+	   Tossing a coin and getting a head..
+	   P(sucess)=0.5
+	   P(Failure)=0.5
+	   
+	   probability of success-->1
+	   probability of Failuer-->0
+	   
+	   P(X=1)-->probability of success 
+	   P(X=0)-->Probability of Failue
+	   
+-In case of discrete probability distribution we dont have
+arithmatic maen(average),IN this we have a weightted average.
+-we are calculating a weighted average using expected value.
+  E(X)=summation(xi*P(xi))
+  
+  
+  
+  X        P(x)
+  0        1-p 
+  1         p
+  
+  E(x)=(0*(1-p))+(1*P) --
+  E(x)=p-->mean  
+  
+  var(x)=E(x^2)-(E(x))^2=p(1-p)
+  
+  SD=sqrt((p*(1-p))  
+  
+ daatset:email--->spam/ham
+ spam=1--->probability of success 
+ ham=0---->probability of failure
+ 
+ lets take the target column--->
+ 
+ 
+ text      target(spam/ham) 
+ 
+ text1--------->spam/ham 
+ each observation in this dataset is follwing the Bernaullis distribution
+       Target~Bernaullis(Target=1)  
+	   
+	   
+Iris dataset--->setosa,virginica,versicolor 
+
+[SL,SW,PL,PW]--->predict-->
+target--->species------------->bearnaullis or not?
+
+
+P->setosa
+(1-p)-->not setosa 
+
+
+Binomial distribution
+
+	   
+
+	   
+
+    
+
+			
+	

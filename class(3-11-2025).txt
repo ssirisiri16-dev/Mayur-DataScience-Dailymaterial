@@ -1,0 +1,71 @@
+Numpy Broadcasting:
+1.when we have any dimension numpy array with (1*1) array
+the operation is always possible.
+2.when both arrays dimensions are same then the operation is possible
+(A)m*n    (B)m*n
+3.(A)--->m*n
+  (B)--->1*n------>possibe
+  
+4.(A)---->m*n
+  (B)---->n*1---->possible
+  
+Task:same broadcasting rules we have to implement with list.
+Normalization on Numpy:
+-we are trying to bring each value of a numpy array in between
+0 to 1
+process:
+   1.find the maximum value in the numpy array
+   2.divide each number of array with maximum value
+   
+ Standradization on Numpy array
+ arr------> arr-mean(arr)/std(arr)--->
+ it folllows the SND(0,1)
+ Stacking:
+ 1.verticle stacking
+ 2.horizontal stacking
+ 
+Given a Two matrices M1 and M2 (random matrices)
+WAP to find the MUltiplication of two matrices
+
+
+intervew:3D matrix multiplication.....
+
+Inverse of matrix:
+ np.linalg.inv(matrix)
+ -we can only find the inverse of a matrix if it is non 
+ singular  det(matrix)!=0
+ -if matrix is singular we cannot find the inverse
+matrix must be square matrix to find the inverse
+square matrix-->no of rows == no of columns
+
+determinant:
+np.linalg.det(matrix)
+
+rank:no of indepenedent rows present in the matrix
+
+Trace of matrix:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+copies and view :
+copy()--->deep copy
+-once we copy the array it is created a new copy of that array
+both new and old array are at the differenet memory location.
+-changes made in one array will not affect the other
+view()--->shallow copy
+-once we create a view of array its is not created another copy
+it is pointinng to the same array
+-changes made in one array will affect the other array
+
+syntax:
+       np.shares_memory(array1,array2)
+it will return True when array1 and arry2 are holding the 
+same memory location
+else-->it return False
+
+
+numpy ---->fixed size--->static allocation
+-numpy is memory efficient
+-for each element in the numpy only one block od memory
+is getting created
+
+list------->variable size--->dynamic allocation.
+-for one element 2 block of memory is created
+-list is not a memory efficient
+
+Numpy is faster than the list..
+
+Pandas:
+-pandas is used for data manipulation,data cleaning and 
+data preprocessing
+-data manipulation:retieving a data..
+  SQL-->DML commands
+-Data cleaning:
+ structure problem
+ noisy data etc
+-preprocessing:before processing a data we are rying to make some
+changes.
+-pandas uses two kind of data structures
+1.Data series or series data
+2.Data Frame
+
+Dataset--->Tabular structure-->it is having a rows and columns
+row---->observation/Tuple
+column--->attribute/feature/label
+
+1.Data series or series data:
+-when we have only one row or only one column then we can
+called it as series data.
+2.Data Frame:
+-when we have more than one row or one column then we called 
+it as data frame.
+
+Syntax:
+       import pandas as pd
+	   import---->keyword
+	   pandas----->library name
+	   pd--------->alias
+
+
+
+
+
+
+
+
+
+
