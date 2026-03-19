@@ -1,0 +1,92 @@
+sequence data type:
+list:
+Tuple:
+set:
+dictionary:
+-undrdered collection of data items
+-storing data in key:value pair--->dict items
+-dictionary keys should be unique
+which data type can we make it as key:
+1.integer
+2.float
+3.complex
+4.boolean
+5.string
+6.Tuple
+7.object-->__hash__
+
+we cannot make:
+list
+set 
+dictionary
+
+we can access the elements of a dictionary with the help of keys.
+dictionary is a mutable
+
+How the dictionary will be stored inside the memory?
+dict={
+  1:100,
+  2:200,
+  3:300
+  }------------>it will stored in the form of hash table
+
+key given in the dictionary---->intger value
+
+"mayur"------------>1010102034
+
+-every key internally getting mapped into integer.
+program may or may not have the input
+program must have the output
+input:whatever the data we are giving to the program
+output:whatever the data we are are getting as a result
+
+input()--->to give input to the program
+-by default the value inside the input function will be considred as
+string
+
+control structure:
+
+CPU--->processor--->all execution will be done by CPU---
+
+program---->number of instructions
+
+P->I1
+   I2
+   I3
+   ---
+   In
+   cpu flow of execution is a sequential
+   
+   P->I1
+   I2
+   I3  condtion
+   I4
+   ----
+   
+   I99
+   In
+ control structure is used to change the flow of execution of the 
+ program
+ we are cahnging the flow of execution by keeping the condition.
+ 
+we have a four types of control structure in python:
+
+1.simple if
+2.if----else
+3.if-----elif------else
+4.nested if 
+
+
+1.simple if:
+-if block without else is called simple if
+syntax:
+      if condition:
+		stmts
+
+
+
+
+
+
+
+

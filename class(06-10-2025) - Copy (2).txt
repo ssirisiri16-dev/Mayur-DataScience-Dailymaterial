@@ -1,0 +1,161 @@
+character set?
+128--->
+
+tokens:
+1.keywords:
+-35 keywords
+2.identifier:
+-name used in a program
+variable name,class name,function name etc
+rules:
+1.alphabets,0-9,_
+2.starts with alpahbets and _
+3.sholud not be a keywords
+4.case sensitive
+5.
+3.operators:
+1.aritmatic:+,-,*,/,//,%,** 
+2.relational:>,<>=,<=,==,!=
+3.logical:and,or,not
+4.bitwise:&,|,^,>>,<<,~ 
+5.assignment:=,+=,-=,*=-----
+6.identity:is ,is not
+7.membership:in,not in
+4.seperators
+5.data types
+6.constants
+data types:
+-what type of data it is
+-how much space is allocated for that data inside the memory
+
+1.Numeric data type:
+  a.integer
+  b.float
+  c.complex
+2.Boolean data type
+3.string data type
+4.sequence data type
+5.binary data type.
+
+intger--->
+a=7-------------->binary
+a=-7-------------->2s complement form
+
+float:
+a=10.75---->IEEE 754 represntation
+
+
+complex data type:
+a+bj--->a-->real
+        bj--->immaginary part
+		
+cost function:
+activation function-->tanh
+
+complex number represents a vector
+
+vecctor--->magnetude as well direction
+
+vector is any point on the plane
+
+how complex number stored in a memory?
+IEEE 754
+string data type:
+-string is a sequence of characters.
+s="mayur"
+-string is starting with index 0
+-there are two ways of accessing a string cahracters
+1.through index:single element
+2.through slicing:multiple elements
+
+how the string will be stored in the memory?
+python--->unicode transformation format-8
+          UTF-8
+ASCII--->7bit number
+Americian standard code for information interchange
+
+A---->65
+B---->66
+C---->67
+----
+Z----
+
+a--->96
+b--->97
+
+
+charcter---->decimal(ASCII)--->binary-->memory
+
+UTF-8--->
+UTF-16
+UTF-32
+
+string---->UTF-8(bytes)---->binary--->memory
+
+
+anaconda distribution--->
+
+jupyter notebook--->
+web application----->application which runs on browser
+-when the appication follows the client server architecture
+then we called it as web application.
+
+client-->user/browser/machine
+
+server-->powerful machine-->where the application is continuously running
+
+1.client-->frontend--->browser-->interface
+2.server--->backend--->ipykernel-->running on the server
+kernel is responsible for performing all the operattions
+
+extension--->.ipynb-->interactive python notebook
+
+jupyter--->more than 65 languages supported
+
+core language are 3 only:
+julia--->ijulia
+python--->ipykernel
+R----------->iR kernel--->jupyter
+
+
+once we run the python code
+
+request--->browser----->carryforward--->server-->kernel
+         HTTP/websocket  ZeroMSGMQ
+hello
+
+jupyter we have three types of cell-->
+1.code cell--write a python-->by default
+2.markdown cell--heading-->h1,h2----h6
+3.Raw cell-->just for writing a raw text like conclusion
+
+sequence data type:
+-it is used to stored a multiple values
+-container
+-we hav efour sequence data type in python
+1.list
+2.Tuple
+3.set
+4.dictionary
+
+
+7075156282
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+Sequence data type:
+-In a sequence we will able to store a multiple values
+-In python we have four types of sequence data type.
+1.List
+2.Tuple
+3.set
+4.dictionary
+list:
+-it is sequence data type
+-it is a collection of hetrogeneous kind of data
+-we will able to store different kind of data in list.
+syntax:
+list_name=[item1,item2-----itemn]
+item1,item2-----itemn--->elements of a list
+list_name---->identifier
+[]--------->subscript operator
+-How to access a list elements:
+-there are two ways for accessing thelist elements
+1.single element---->index
+2.multiple elemnts--->slicing
+-list index will start from 0
+-list is a mutable -->we can cahnge the content of a list.
+-list is not stored in a consecutive order in memory
+-whenever there is a space in memory it will store accordingly
+
+
+2.Tuple:
+-it is also a sequence data type
+-it is a collection of hetrogeneous kind of data
+syntax:
+tuple_name=(item1,item2------itemn)
+we can access the tuple elements in two ways-->
+1.single element--->index
+2.multiple elemnts--->slicing
+-tuple index is also starts with 0
+-Tuple is immutable-->we cant change the content of a tuple.
+3.set:
+-it is also a sequence data type
+-it is also a collection of hetrigeneous kind of data
+-set is unordered
+syntax:
+ set_name={item1,item2-----itemn}
+-we cant access the set element becoz set is unordered.
+-we cant change the particular element in a set so elementwise
+set is immutable otherwise its a mutable
+-set wont allows a duplicate.
+4.Dictionary:
+-it is also a sequence data type
+-it is also called it as mapping data type
+-we can stored element in dictionary in the form of
+ key:value pair
+syntax:
+  dict_name={
+       key1:value1,
+	   key2:value2,
+	   ------
+	   }
+	   each key:value pair we called it as dictionary item
+each item of a dictionary is seperated by comma except last
+item
+-dictionary key should be unique if we use the duplicate key
+it overwrite the previous key
+which data type we can make it as key
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
