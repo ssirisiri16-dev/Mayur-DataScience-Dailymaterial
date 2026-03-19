@@ -1,0 +1,45 @@
+outlier detection technique:
+heights=[164cm,178cm,180cm,189,60cm]
+
+-outliers are those points which not comes in therange of normal datapoint.
+Reasons:noise 
+        typo mistake
+        genetic problem
+		
+we have a outlier dtection technique :
+Graphical techniques:
+1.Boxplot
+2.Scatter plot
+
+Handling the outliers:
+1.Trimming --->removing the outliers
+2.capping----->if we got a outlier we are replacing that values with other value 
+
+
+
+we have three methods:
+
+1.Gaussian distribution based
+  if the column is a Gaussian distributed then we will use this method
+  if the data going out the range of (mean-3*sd) to (mean+3*sd) then it 
+  will be considered as outliers.
+  LL=(mean-3*sd)
+  UL=(mean+3*sd)
+  
+2.IQR-->proximity rule:
+    NOn Gaussian distribution
+   LL=Q1-1.5*IQR--
+   UL=Q2+1.5*IQR--
+   if the data point it is in this range then it will be consider as normal
+   data otherwise it is a outlier .
+   very large outlier --->3
+   moderate outlier---->2
+   when we a skewed distribution.
+   
+3.Quantile method:
+  any case.
+  0.05--->5% quantile 
+  0.95--->95% quantile
+  if the data point is in this range then it will consider as normal point 
+  otherwise it is outlier
+  

@@ -1,0 +1,91 @@
+Chi-square Test:
+-it is a non parametric test(mean,sd)
+-we dont required any parameter in this test .
+-we are using chi squaure test to check the two categorical columns are having
+a realtion  or not
+-chi square test dealing with categorical column.
+
+process:
+
+step1:defined H0 and H1
+   H0:Both columns are independent
+   H1:Both columns are not indepenedent
+step2:we need to form a contengency matrix/oberserved matrix .
+      it can be given 
+	  we need to make 
+step3:
+     we need to find the expected matraix:
+	      (row_sum*column_sum)/total_sum 
+step4:
+     chi2_value=summation((observed-Expected)**2/expected)
+step5: find the degree of freedom
+       total no of possibilies
+	   dof=(no_of_rows-1)*(no_of_columns-1)
+step6:find the critical value for 5% significance level with dof 
+     from chi-square table.
+step7:
+      if chi2_value>critical value--->H0 is rejected 
+	                                  H1 is accepted .
+ex:
+ researcher doing a survey gender and the genre of the movie are having 
+ a relation.
+ sample_size=100
+ H0-->gender and movie genre are independent 
+ H1-->gender and movie genere are not independent
+ 
+              comedy      action     drama
+  
+  male        20           30        10       rs=60
+ female       10           20        10       rs=40 
+              30           50        20       total_sum=100
+			  
+
+
+ row_sum*col_sum/total_sum 
+ 
+ 
+                  comedey       action         drama 
+		male    (60*30)/100    (60*50)/100    (60*20)/100 
+	   female   (40*30)/100    (40*50)/100    (40*20)/100
+	   
+	   
+	            comedey      action      drama
+	   
+	   male      18          30           12
+	   female    12          20           8--->expected
+	   
+	   
+	   
+	   chi2=summation((observed-expected)**2/expected)
+	   
+	   for male 
+	   
+	   comedey=(20-18)**2/18=0.22
+	   action=(30-30)**2/30=0
+	   drame=(10-12)**2/12=0.33
+	   
+	   
+	   for female
+	   
+	   comedey=(10-12)**/12=0.33
+	   action =(20-20)**/20=0
+	   drama=(10-8)**2/8=0.5
+	   
+	   chi2=0.22+0+0.33+0.33+0+0.5
+	   chi2=1.38
+	dof=(2-1)*(3-1)=1*2=2
+	
+	5% sigficance level dof=2-->chi square table
+	critical_value=5.991
+	
+	chi2<critical_value---->H0 accepted 
+	
+	
+Is survival independent of gender?
+(Survived vs Sex)
+
+	
+	   
+	   
+     
+	

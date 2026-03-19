@@ -1,0 +1,119 @@
+Statistics:
+-way of solving a problem with the help of data.
+-we have two types of Statistics:
+1.Descriptive Statistics:
+ -summarizing
+ -describing
+ -interpreting
+ -visualization of data.
+2.Inferential Statistics:
+ population:set of all possible data points
+ sample:subset of population.
+ we are performing the analysis on sample and we talking about
+ the population.
+ 
+ 
+ 1.Descriptive stats:
+  -measures of central tendencies:
+  1.mean:average
+   -mean is getting influeneced by the outlier.
+  2.median:middle value
+  -not getting influenecd by outliers
+  -mean and median we areusing in the case of numerical data.
+  3.mode:
+  -categorical data
+  -highest frequency of occurrence.
+  -measures of disperssion:
+   spread-->deviation
+  1.variance:
+  2.standard deviation:
+  3.range:max(value)-min(value)
+  
+  variance and SD both are getting influenced by the outliers.
+  
+  mean--->deviation-->SD-->how far the particular data point is 
+  from the mean
+  
+  median--->mad(median absolute deviation)-->how far the particular
+  data point is from the median.
+  
+  syntax:from statsmodel import robust
+          robust.mad(data)
+		  
+		  
+ probability:
+ -chances of occurrence of event.
+ -Experiment:Tossing a coin
+ -Event:getting head or tail is event
+ ex:Tossing a coin getting a head.
+ Proability=(no of favourable outcomes)/total no of outcomes 
+ 
+ ex:tossing a coin what is th eprobability of getting head?
+ total number of possible outcomes={H,T}-->sample space
+ sample space-->set of all possible outcomes.
+ P(head)=1/2=50%
+ law of large numebr:
+ 
+ when we will able to find the probability of any event?
+ -event should be Unbiased
+ -event should be ME.(both events should not happen simultaneously
+    0<=P(E)<=1 
+ 
+ 1.sure event:P(E)=1
+ 2.impossible event:P(E)=0
+ 3.equally likey event:each event are having a 50%-50% chances 
+ 
+ probability distribution:
+ Random variable:
+ 
+ tossing a two coins simultaneously:
+ c1 c2--->sample space={HH,HT,TH,TT}
+ H  H
+ H  T 
+ T  H  
+ T  T  X-->getting a head ----->random variable..
+ 
+ X=0-->getting a zero head 
+ X=1-->getting a one head 
+ X=2--->getting a two heads
+ 
+ random variable is not a variable.
+ random variable is a function
+ random variable is a function which maps SS with a real number
+ 
+ based on the values the RV is taking random variables are classified
+ into two types:
+ let Random variable is denoted by X
+ 1.Discrete random variable:discrete value
+ 2.continuous random variable:continous value
+ 
+ x=1.2
+ 
+ X=184.6cm
+ 
+ dataset:10 days data of number of iphone sold
+ 
+          days          no of iphone sold--X
+		   1                 0
+		   2                 2
+		   3                 4
+		   4                 6
+		   5                 7
+		   6                 5
+		   7                 0
+		   8                 2
+		   9                 1
+		   10                4
+		   
+		   P(X=0)=what is the probability that the 0 iphone sold
+		   P(x=0)=2/10
+		   P(x=5)=1/10
+		   
+		   P(x=4.5)-->X is a discrete random variable....
+		   
+		   
+       
+ 
+ 
+ 
+ 

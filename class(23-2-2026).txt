@@ -1,0 +1,55 @@
+LSH:
+randomized algorithm:
+1.
+m=no of hyperplanes=3
+eqn of plane passing throgh origin=wTx=0 
+eqn of plane not passing throgh origin=wTx+b=0 
+wTx>=0---->+1
+wTx<0----->-1
+consider slice:1
+  consider plane:1
+  w1Tx1>=0
+  w1Tx2>=0
+  w1Tx3>=0
+  w1Tx4>=0
+  w1Tx5>=0 ---->+1 
+  consider plane:2 
+  w2Tx1>=0
+  w2Tx2>=0
+  w2Tx3>=0
+  w2Tx4>=0
+  w2Tx5>=0 ---->+1 
+  consider plane:3
+  w3Tx1>=0
+  w3Tx2>=0
+  w3Tx3>=0
+  w3Tx4>=0
+  w3Tx5>=0 ---->+1 
+  
+consider slice:2
+  consider pi:1
+  w1Tx6>=0
+  w1Tx7>=0
+  w1Tx8>=0
+  w1Tx9>=0
+  w1Tx10>=0 ---->+1 
+  
+  consider pi:1
+  w2Tx6<0
+  w2Tx7<0
+  w2Tx8<0
+  w2Tx9<0
+  w2Tx10<0----------->-1 
+  
+  consider pi:3
+  w3Tx6<0
+  w3Tx7<0
+  w3Tx8<0
+  w3Tx9<0
+  w3Tx10<0----------->-1  
+  
+  1.take 10  points with 4D 
+  2.get a w-->np.random.normal 
+  3.wT.x
+  
+  

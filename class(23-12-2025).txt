@@ -1,0 +1,126 @@
+Binomial Distribution:
+ex:flips a coin four time what is the probability of getting 2heads
+1.binomial distribution is a combination of bernaullis trial
+ex:tossin a 10 times what is the probability of getting 6 heads
+    X=probability of getting head.
+	X=0
+	x=1
+	x=2
+	x=6
+	P(success)=getting haed
+	P(Failure)=getting tail
+
+   T1----->each toss is a beanaulis event
+   T2
+   T3
+   
+   
+   
+   T10
+   
+   
+   test:
+   Q1-->True/False
+   Q2
+   Q3
+   
+   
+   Q10
+
+dataset:text---->spam/ham
+                 P(Success)=spam 
+				 P(failure)=ham
+				 
+				 
+	text         target
+	t1            spam------>Bernaullis trial
+	t2            ham 
+	t3            spam
+	-------
+	
+	
+	what is the probability of getting spam--->binomail distribution.
+	P-->probability of success 
+	(1-P)-->probability of Failure
+	
+	P(x)=nCr*(P)^r *(1-P)^(n-r) 
+	n=total number of trials
+	r=no of times we are getting a success.
+	
+	Task:flipping a coin 4 times probability of getting X heads.
+	
+	X=getting no of heads 
+	
+	X=0=P(x=0)=
+	X=1=P(x=1)=
+	X=2=P(x=2)=
+	X=3=P(x=3)=
+	X=4=P(X=4)=
+	
+	mean=weighted average=summation(xi*p(xi))
+	    =p+p+p+p+p----n 
+		==n*p
+	
+	Unifrom Distribution:
+	-we have a two types of uniform distribution--
+	1.Discrete uniform distribution 
+	2.Continuous uniform distribution 
+	
+	Discrete uniform distribution:
+	-In uniform distribution each and every event is equiprobablle
+	-each and every event is having a same probability of happedning.
+	ex:rolling a die 
+	  SS={1,2,3,4,5,6}
+	  x=getting a number
+	  P(x=1)=1/6
+	  P(x=2)=1/6
+	  P(x=3)=1/6
+	  P(X=4)=1/6
+	  P(X=5)=1/6
+	  P(X=6)=1/6--->it is following the discrte uniform distribution.
+	  
+	  np.random.rand()--->as per uniform distribution
+	  
+	  -uniform distribution are having a two distributionn parameter
+	  (a,b)
+	  a--->lower value
+	  b=higher value
+	  n=no of possible outcomes=b-a+1
+	  
+	  a=1
+	  b=6
+	  n=6-1+1=6
+	  
+	  PMF:
+	  
+	  rolling a die getting a prime number on it -->
+	  will it follows the uniform distribution.
+	  ss={2,3,5}
+	  p(x=2)=1/3
+	  P(x=3)=1/3
+	  P(x=5)=1/3--->it is not at all following the uniform distribution.
+	  
+	  
+	  x=1------->P(X=1)
+	  x=2------->P(x=2)
+	  x=3-------->P(x=3)
+	  x=4-------->P(x=4)
+	  x=5-------->P(x=5)
+	  x=6-------->P(x=6)
+	  
+	  mean=(a+b)/2
+	  
+	  
+	continuous probability distribution:
+	-it is having a continuous random variable.
+	-continuous Rv are having probability density function(PDF)
+	=every distribution has a distribution parameter.
+	1.Gaussian Distribution 
+	2.continuous Unifrom distribution
+	3.Log normal distribution
+	4.apreto distribution 
+	5.Weibull distribution
+	
+	
+
+	

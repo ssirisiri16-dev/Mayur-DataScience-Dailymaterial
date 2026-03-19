@@ -1,0 +1,30 @@
+Graph:
+-Nonlinear data structure
+-G(V,E)
+V--->set of all vertices
+E--->set of all edges 
+
+node1                 node2
+
+
+person drives a car
+
+
+person------->car
+
+directed Graph :
+
+Undirected Graph:
+
+
+Twitter--->undirected graph
+
+instagram--->p1------>p2
+
+
+dictionary-->create a graph  
+
+Traversing a Graph:
+1.DFS:depth first search:
+ stack
+2.BFS:breadth first search

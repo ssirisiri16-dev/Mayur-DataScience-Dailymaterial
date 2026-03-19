@@ -1,0 +1,23 @@
+EDA:
+-we dont know anything about data before starting thats the reason we
+calle dit as exploratory data analysis.
+-we are  using simple maths,statistics and plotting.
+1.Univariate analysis 
+2.bivariate analysis 
+3.Multivariate analysis 
+
+univariate:(continuosus)
+1.distplot
+2.QQ plot 
+3.KS test
+4.ad test 
+5. if gaussian--->empirical prperties ,CDF 
+   if non Gaussian -->chebyshevs,Bootstarpping CI 
+6.CLT,CI 
+categorical:
+bar plot 
+check distribution using value_count.
+
+chebyshev inequality:
+-it is used to give the sd ranage when the distribution is non Gaussian .
+(meu-k*sigma)<k<=(meu+k*sigma)>1-1/k^2
