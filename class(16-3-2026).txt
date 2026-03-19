@@ -1,0 +1,93 @@
+Skewness and Kurtosis:
+symmetric distribution:
+
+1.right skewed:
+-if the deviation is more on right side -->righ skewd 
+2.left skewed 
+-if the deviation is more on the left side-->left skewed. 
+
+skewess:
+-how far my distribution is from the symmetric.
+-skewness==0--->symmetric-->normal distribution 
+-skewness>0-->right skewed 
+=skewness<0-->left skewed.
+from scipy.stats import skew 
+skew(data)
+
+
+Kurtosis:
+-how peaked the distribution is.
+kurtosis=0-->Gaussian/normal 
+kurtosis>0-->peake dis more than the normal distrbution peak 
+kurtosis<0--->peaked is less tthan the normal distribution peak.
+
+skewness=0 and kurtosis=0 its a strong indication that 
+distribution is a gaussian but not a guarantee.
+
+excess kurtosis--->
+
+fisher=True-->excess kurtosis 
+excess kurtosis=normal kurtosis-3
+
+excess kurtosis is more indicating to the normal distribution
+
+multple category in a column:
+1.value_Count--->1% or less tahn 1%---
+2.category:threshold:5-->NLP
+  w1-->100 
+  w2--->80 times 
+  
+  w'-->5
+  
+  1.value_Count--->1% or less tahn 1%---consider-->it can be  
+  a outliers..
+  1.remove 
+  2.handle it :
+    arm --->1
+	abc--->1--->category-->other
+	
+Impact of the outliers on KNN:
+if we have a outlier and the k value is 1 the decesion surface 
+is getting changes-->
+if we changes the k_value-->decesion surfacece chage-->
+model is getting change-->
+outlier will definately impact the KNN.
+if the k value is small it is is more prone towards the 
+outliers .
+
+you have to find out the k_value?
+cv ot k-fold cv 
+10 fold cross validation:
+
+k=1-------->96%
+k=2-------->96%
+k=3-------->98%
+k=4-------->98%
+k=5-------->98%
+k=6-------->98%
+------------------------------>
+k=7-------->94%
+k=8-------->93.22%
+k=3,4,5,6--->98% accuracy?
+which k value you will select?
+we will chose k=5-->becoz its less pronee to the outliers 
+as well odd .
+
+we want to detect a extreme outliers:
+5D--->
+
+1000dim--->model based-->ML algorithm-->outlier or not .
+extreme outliers--->LOF-->local outlier factor 
+-KNN based tecnique:
+it is doin a labeling 
+outlier--->-1 
+inlier---->+1 
+
+dataset-------->LOF alogrithm--->dataset+LOF
+
+
+
+
+	
+  
+  

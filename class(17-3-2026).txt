@@ -1,0 +1,29 @@
+D---->X,Y 
+Y--->target column 
+X--->faetures
+LOF-->local outlier factor-->extreme outliers.
+LOF--->+1-->inliner 
+       -1-->outliers 
+	   
+	   df_inliner --LL,UL 
+	   df_outliers------->-1
+	   LL
+	   
+	   quan
+	   
+	   
+	   D--->Dtrain           Dtest
+	   
+	   train-->xtrain,ytrain 
+	   inliners 
+	   outliers 
+	   xtrain_sacled 
+	   
+	   test-->xtest,ytest 
+	   inlinesr 
+	   ouliers 
+	   xtest_scaled
+	   
+	   
+	   
+	   
