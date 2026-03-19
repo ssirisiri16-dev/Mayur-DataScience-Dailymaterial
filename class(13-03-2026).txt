@@ -1,0 +1,37 @@
+age--->young ,adult,senior 
+
+consider-->height--->
+young--->[
+adult--->[]
+senior-->[] 
+
+average height of this three group is same of different.
+ANNOVA:
+H0--->all groups are having same average height 
+H1---->atleast one group contains diff average height.
+
+Step:1 compute each group mean 
+Step:2compute overall mean of entire data (x-bar)
+Also N-->total data points present in all groups.
+
+
+sugar_level-->high ,low,medium 
+age--->
+low<=70
+high-->126--->180
+normal--->70-125
+
+sugar_level--->weigth 
+H0--->avg weight for all sugar_level is same
+H1
+cholestrol---->weight 
+
+
+sugar_level,age 
+cholestrol,age
+
+
+diet-->weight
+
+
+

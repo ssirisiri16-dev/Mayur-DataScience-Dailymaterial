@@ -1,0 +1,143 @@
+Feature Engineering:
+1.Forward feature selection 
+2.Backword feature selection.
+
+
+1.Forward feature selection:
+f1,f2-------------fn 
+Dn=Dtrain|Dtest 
+
+f1--------->Dtrain|Dtest---->a1 
+               f1
+			   
+f2-------->Dtrain|Dtest ----->a2
+              f2 
+			  
+			  
+			  
+a1,a2,a3-----an --->selected f10 
+
+f1---f9,f11--f1000 
+
+f1----------->dtrain|dtest ----->a1 
+               f1,f10 
+
+
+time complexity of FFS:
+O(n^2)---->model creattion 
+LR---->O(m*n*k)
+
+from sklearn.feature_selection import SequentialFeatureSelector
+
+sklearn-->library
+feature_selection-->submodule 
+SequentialFeatureSelector-->class
+
+ffs=SequentialFeatureSelector(
+     model,
+	 n_features_to_select=2,
+	 direction='forward',
+	 scoring="accuracy", 
+	 cv=5
+	 )
+	 
+bfs=SequentialFeatureSelector(
+     model,
+	 n_features_to_select=2,
+	 direction='backward',
+	 scoring="accuracy", 
+	 cv=5
+	 )
+	 
+from sklearn.linear_model import LogisticRegression
+
+lr=LogisticRegression() 
+
+Dn----->Dtrain,Dtest 
+
+from sklearn.model_selection import train_test_split 
+
+xtrain,xtest,ytrain,ytest=train_test_split(x,y,test_size=0.2,random_state=42)
+
+X--->featurevector-->[SL,SW,PL,PW]
+Y--->species .
+
+
+step1:
+   import numpy as np
+   import pandas as pd
+   
+   df=pd.read_csv("iris.csv")
+   df 
+   
+step2:
+   x=df.drop(columns=["species"])
+   y=df["species"]
+   
+step3:
+from sklearn.model_selection import train_test_split 
+xtrain,xtest,ytrain,ytest=train_test_split(x,y,test_size=0.2,random_state=42)
+ 
+step4:creating a Logistic regression model 
+ from sklearn.linear_model import LogisticRegression 
+ model=LogisticRegression(max_iter=100)
+ 
+step5:using FFS
+from sklearn.feature_selection import SequentialFeatureSelector
+ffs=SequentialFeatureSelector(
+     model,
+	 n_features_to_select=2,
+	 direction='forward',
+	 scoring="accuracy", 
+	 cv=5
+	 )
+step6:
+   ffs.fit(xtrain,ytrain) 
+   
+step:7
+selected_features=ffs.get_support()
+   
+
+ 
+ bfs=SequentialFeatureSelector(
+     model,
+	 n_features_to_select=2,
+	 direction='backward',
+	 scoring="accuracy", 
+	 cv=5
+	 )
+	 
+  bfs.fit(xtrain,ytrain)
+  
+  selected_featuresl_bfs=bfs.get_support()
+  
+  new_features=[]
+  for i in range(len(selected_featuresl_bfs)):
+      if selected_featuresl_bfs[i]==True:
+	      new_features.append(df.columns[i])
+  new_features 
+  
+  
+ what if we got different features in FFS and BFS 
+ assume
+ FFS--->PL,PW 
+ BFS--->PL,SW 
+ 
+ build a fist model--->using FFS features 
+ Build a second model--->using BFS features 
+ we will check the cross_validation_score 
+ whichever model is giving me high Cross_validation score 
+ that models features we will select..
+ FFS--->model--->95% -->select --->PL,PW..
+ BFS---->model--->93%
+ 
+Recursive Feature Elimination:
+f1,f2,f3----f1000
+
+f1------->Dtrain|Dtest ----->a1 
+           f1
+
+ 
+	       
+
+

@@ -1,0 +1,33 @@
+male_height
+female_height
+
+s1--------->50
+s2--------->50 --->D=mean(S1)-mean(S2) 
+
+combine(s1 and s2)=100 -->shuffle
+
+random picked two samples 
+
+x1---->50
+y1---->50---->meu1-meu2--->d1 
+
+x2---->50 
+y2---->50----->mei1-meu2-->d2
+
+
+
+
+x1000
+y1000--------->d1000
+
+d1,d2,d3--------d1000 
+
+sort it in ascending order 
+
+d1,d2,d3---------d1000
+
+what percentage of a value are greater than D in  the baove list 
+10%>-->P-value=10 
+
+if P_10%--->H0 is accepted 
+

@@ -1,0 +1,51 @@
+Hyperparameter Tunning:
+parameter:its that value where model is leansing 
+during a training.
+Hyperparameter:
+-hyprparameter is the value wthat we need to set it before
+training.
+KNN--->K-hyprparameter
+k=1---->overfit 
+k=n---->undefit 
+we dont have a universal value of K 
+-we need best k value base on the data and other 
+parameter .
+-Hyperparameter is a process in that we are finding 
+best possible combination to get a better accuracy.
+-K--->hyperparameter 
+best technique to find the k_value-->k fold CV 
+
+GridSearchCV():
+-this one of the tool in sklearn to perform the 
+hyperparameter tunning.
+-it making all the all possible combination ,among
+all the possible combination it is giving a best 
+combination.--->DP
+
+param_grid={
+   "n_neighbors"=[3,5,7],
+   "weights=['uniform','distance']
+   }
+   
+1.Gridsearchcv form all the possible combinations
+ 3------>uniform---->c1 
+ 3------>distance--->c2 
+ 5------>uniform---->c3
+ 5------>distance--->c4
+ 7------>uniform---->c5 
+ 7------>distance--->c6
+2.it will bulid a model based on each combinations 
+
+3.using cross validation
+
+4.checking the score--->accuray
+
+ 3------>uniform---->c1 ---->a1=80
+ 3------>distance--->c2 --->a2=80.9
+ 5------>uniform---->c3---->a3=90
+ 5------>distance--->c4----->a4=91
+ 7------>uniform---->c5 ---->a5=96
+ 7------>distance--->c6----->a6=92
+ 
+ gridserahcv-->7------>uniform---->c5 ---->a5=96
+

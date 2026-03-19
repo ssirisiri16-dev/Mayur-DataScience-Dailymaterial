@@ -1,0 +1,163 @@
+Feature Engineering:
+each column in the dataset ---->feature .
+f1,f2,f3,f4--------fn --->n=1000
+Build a ML model with the help of this feature..
+curse of dimensionality:
+Huges phenomenon:
+if the number of feature is increases the model performance
+is getting decrease.
+out of 1000--->100 importance features--->task will be done.
+out of 1000 features we are selecting the 100 features .this
+processing we called it as feature selection.
+
+1000---->
+we cannot use KNN directly for the faetaure selection .
+
+1000-------------->100--->is it not a dimensionality reduction.
+dimensionality reduction tecnique:
+PCA 
+t-SNE---->
+PCA is not focusing on faeture imporatnace 
+PCA is following a strategy wherever the spread is more we will
+keep that feature otherwise we will remove it.
+
+f1,f2,f3----------------f1000 
+
+f100--->
+model will give the score to each feature .
+based on the imporatnce of the feature .
+f1>f2--->f100--->task will be easy .
+model based feature selection:
+-we have a two types of model based feature selection:
+
+dataset:     price:--->20 features --->10 feature selection.
+correlation:
+10-->numerical column --->prce
+categorical--->chis quare test 
+
+10 columns-->categorical--->
+
+height,weight,goal,bmi,cholestrol_level,sigar_level,diet
+
+1.Forward Feature selection 
+2.Backward feature selection.
+
+1.Forward Feature selection:
+f1,f2-------f1000
+Dn---->Dtrain|Dtest
+
+we will take f1 with the help of feature 1 we building a model 
+
+f1---------->Dtrain|Dtest --------->accuracy=a1 
+             only using f1
+			 model->ML
+			 
+f2--------->Dtrain|Dtest ----------->accuracy=a2 
+            only using f2 
+			building a Model
+			
+			
+----
+
+f1000
+
+a1,a2,a3----------a1000 
+we will checkwhich feature is having a maximum accuracy 
+that feature we will select .
+f10--->selecting-->a10 accuracy is more .
+
+
+f10 --->90
+f8----->89.9--->becoz there is a similarity between theses two
+features.
+we cant take both becoz those are redundent faeture .
+
+
+f1,----f9,f11---f1000 
+
+f1-------->Dtrain|Dtest ---------->a1 
+            f1  f10
+			building a model
+			using these two 
+			faetures
+			
+f2------>Dtrain|Dtest 
+         f2|f10 
+		 building a model--------->a2 
+		 
+-----
+
+f1000----->Dtrain|Dtest 
+           f1000,f10-------------->a1000
+		   
+we have selected f5 
+f1,---f4,f6----f9,f11----f1000 
+
+f1--------->Dtrain|Dtest 
+             f1|f10,f5------------>a1
+
+model--->Logistic regression model.
+
+Time complexity of FFS:
+total features=n
+
+1st iteration---->m 
+
+2nd iteration--->(m-1)
+
+3rd iteration--->(m-2)
+
+
+think????
+
+Time ans space complexity
+
+Backward Feature selection:BFS
+
+f1,f2,f3-------------f1000 
+
+step1:
+building a model with the help of 1000 features 
+
+
+f1,f2,f3---f1000---->Dtrain|Dtest ---->a1 -->90
+
+f2----f1000-------->Dtrain|Dtest----->a2 --->89
+
+f3----------------------------------------->90
+
+from sklearn.linear_model import LogisticRegression
+
+from
+import---->keywords.
+
+sklearn--->library 
+
+linear_model--->submodule-->it is having all linear model 
+
+
+from this submodule we are selecting a LogisticRegression
+class.
+
+lr=LogisticRegression()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
